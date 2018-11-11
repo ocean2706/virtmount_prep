@@ -1,0 +1,21 @@
+484a485
+> ./linux-headers/asm
+707a709
+> ./config.log
+1105a1108
+> ./config-host.mak
+1146a1150
+> ./config-all-disas.mak
+1148a1153,1155
+> ./x86_64-linux-user
+> ./x86_64-linux-user/config-target.mak
+> ./x86_64-linux-user/Makefile
+1745a1753
+> ./tests/qemu-iotests/common.env
+5459a5468,5469
+> ./roms/vgabios
+> ./roms/vgabios/config.mak
+5467a5478
+> ./roms/seabios/config.mak
+5643a5655
+> ./config.status

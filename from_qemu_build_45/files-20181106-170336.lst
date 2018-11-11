@@ -1,0 +1,135 @@
+Install prefix    /usr/local
+BIOS directory    /usr/local/share/qemu
+firmware path     /usr/local/share/qemu-firmware
+binary directory  /usr/local/bin
+library directory /usr/local/lib
+module directory  /usr/local/lib/qemu
+libexec directory /usr/local/libexec
+include directory /usr/local/include
+config directory  /usr/local/etc
+local state directory   /usr/local/var
+Manual directory  /usr/local/share/man
+ELF interp prefix /usr/gnemul/qemu-%M
+Source path       /home/wheel1/Desktop/git.qemu/qemu
+GIT binary        git
+GIT submodules    ui/keycodemapdb tests/fp/berkeley-testfloat-3 tests/fp/berkeley-softfloat-3
+C compiler        cc
+Host C compiler   cc
+C++ compiler      c++
+Objective-C compiler cc
+ARFLAGS           rv
+CFLAGS            -O2 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 
+QEMU_CFLAGS       -I/usr/include/pixman-1  -Werror  -pthread -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -m64 -mcx16 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wall -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv  -Wexpansion-to-defined -Wendif-labels -Wno-shift-negative-value -Wno-missing-include-dirs -Wempty-body -Wnested-externs -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wold-style-declaration -Wold-style-definition -Wtype-limits -fstack-protector-strong
+LDFLAGS           -Wl,--warn-common -m64 
+QEMU_LDFLAGS       
+make              make
+install           install
+python            python -B
+smbd              /usr/sbin/smbd
+module support    no
+host CPU          x86_64
+host big endian   no
+target list       x86_64-linux-user
+gprof enabled     no
+sparse enabled    no
+strip binaries    yes
+profiler          no
+static build      no
+SDL support       no 
+GTK support       no 
+GTK GL support    no
+VTE support       no 
+TLS priority      NORMAL
+GNUTLS support    no
+libgcrypt         no
+nettle            no 
+libtasn1          no
+curses support    no
+virgl support     no 
+curl support      no
+mingw32 support   no
+Audio drivers     oss
+Block whitelist (rw) 
+Block whitelist (ro) 
+VirtFS support    no
+Multipath support no
+VNC support       no
+xen support       no
+brlapi support    no
+bluez  support    no
+Documentation     no
+PIE               no
+vde support       no
+netmap support    no
+Linux AIO support no
+ATTR/XATTR support no
+Install blobs     no
+KVM support       no
+HAX support       no
+HVF support       no
+WHPX support      no
+TCG support       yes
+TCG debug enabled no
+TCG interpreter   no
+malloc trim support no
+RDMA support      no
+PVRDMA support    no
+fdt support       no
+membarrier        no
+preadv support    yes
+fdatasync         yes
+madvise           yes
+posix_madvise     yes
+posix_memalign    yes
+libcap-ng support no
+vhost-net support no
+vhost-crypto support no
+vhost-scsi support yes
+vhost-vsock support no
+vhost-user support no
+Trace backends    log
+spice support     no 
+rbd support       no
+xfsctl support    no
+smartcard support no
+libusb            no
+usb net redir     no
+OpenGL support    no
+OpenGL dmabufs    no
+libiscsi support  no
+libnfs support    no
+build guest agent no
+QGA VSS support   no
+QGA w32 disk info no
+QGA MSI support   no
+seccomp support   no
+coroutine backend ucontext
+coroutine pool    no
+debug stack usage no
+mutex debugging   no
+crypto afalg      no
+GlusterFS support no
+gcov              gcov
+gcov enabled      no
+TPM support       no
+libssh2 support   no
+TPM passthrough   no
+TPM emulator      no
+QOM debugging     no
+Live block migration no
+lzo support       no
+snappy support    no
+bzip2 support     no
+NUMA host support no
+libxml2           no
+tcmalloc support  no
+jemalloc support  no
+avx2 optimization no
+replication support no
+VxHS block device no
+capstone          no
+docker            no
+libpmem support   no
+libudev           yes
+
+NOTE: cross-compilers enabled:  'cc'

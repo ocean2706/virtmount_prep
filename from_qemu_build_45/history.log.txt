@@ -1,0 +1,25 @@
+wheel1@wheel1-X510UQR:~/Desktop/git.qemu/qemu$ make V=1 -n qemu-img > ../makelog-V1-`date +%Y%m%d-%H%M%S`.log
+nm: 'libqemuutil.a': No such file
+wheel1@wheel1-X510UQR:~/Desktop/git.qemu/qemu$ make V=1 -n qemu-img > ../makelog-V1-`date +%Y%m%d-%H%M%S`.log 2>&1
+wheel1@wheel1-X510UQR:~/Desktop/git.qemu/qemu$ make V=1 -p -n qemu-img > ../makelog-V1-p1-`date +%Y%m%d-%H%M%S`.log 2>&1
+wheel1@wheel1-X510UQR:~/Desktop/git.qemu/qemu$ make V=1 -p -n qemu-nbd > ../makelog-V1-p1-nbd-`date +%Y%m%d-%H%M%S`.log 2>&1
+wheel1@wheel1-X510UQR:~/Desktop/git.qemu/qemu$ find > ../files-make-n-p-`date +%Y%m%d-%H%M%S`.lst
+wheel1@wheel1-X510UQR:~/Desktop/git.qemu/qemu$ make V=1 qemu-img > ../makelog-V1-img-`date +%Y%m%d-%H%M%S`.log 2>&1
+wheel1@wheel1-X510UQR:~/Desktop/git.qemu/qemu$ make V=1 qemu-img
+(cd /home/wheel1/Desktop/git.qemu/qemu; if test -n ""; then pkgvers=""; else if test -d .git; then pkgvers=$(git describe --match 'v*' 2>/dev/null | tr -d '\n'); if ! git diff-index --quiet HEAD &>/dev/null; then pkgvers="${pkgvers}-dirty"; fi; fi; fi; printf "#define QEMU_PKGVERSION \"${pkgvers}\"\n"; if test -n "${pkgvers}"; then printf '#define QEMU_FULL_VERSION QEMU_VERSION " (" QEMU_PKGVERSION ")"\n'; else printf '#define QEMU_FULL_VERSION QEMU_VERSION\n'; fi; ) > qemu-version.h.tmp
+if ! cmp -s qemu-version.h qemu-version.h.tmp; then mv qemu-version.h.tmp qemu-version.h; else rm qemu-version.h.tmp; fi
+make: 'qemu-img' is up to date.
+wheel1@wheel1-X510UQR:~/Desktop/git.qemu/qemu$ make V=1 qemu-nbd > ../makelog-V1-nbd-`date +%Y%m%d-%H%M%S`.log 2>&1
+wheel1@wheel1-X510UQR:~/Desktop/git.qemu/qemu$ make V=1 qemu-nbd
+(cd /home/wheel1/Desktop/git.qemu/qemu; if test -n ""; then pkgvers=""; else if test -d .git; then pkgvers=$(git describe --match 'v*' 2>/dev/null | tr -d '\n'); if ! git diff-index --quiet HEAD &>/dev/null; then pkgvers="${pkgvers}-dirty"; fi; fi; fi; printf "#define QEMU_PKGVERSION \"${pkgvers}\"\n"; if test -n "${pkgvers}"; then printf '#define QEMU_FULL_VERSION QEMU_VERSION " (" QEMU_PKGVERSION ")"\n'; else printf '#define QEMU_FULL_VERSION QEMU_VERSION\n'; fi; ) > qemu-version.h.tmp
+if ! cmp -s qemu-version.h qemu-version.h.tmp; then mv qemu-version.h.tmp qemu-version.h; else rm qemu-version.h.tmp; fi
+make: 'qemu-nbd' is up to date.
+wheel1@wheel1-X510UQR:~/Desktop/git.qemu/qemu$ find > ../files-make-img-nbd-v1-`date +%Y%m%d-%H%M%S`.lst
+wheel1@wheel1-X510UQR:~/Desktop/git.qemu/qemu$ make qemu-img > ../makelog-V1-p1-`date +%Y%m%d-%H%M%S`.log 2>&1
+wheel1@wheel1-X510UQR:~/Desktop/git.qemu/qemu$ make qemu-img
+make: 'qemu-img' is up to date.
+wheel1@wheel1-X510UQR:~/Desktop/git.qemu/qemu$ make qemu-nbd > ../makelog-V1-p1-nbd-`date +%Y%m%d-%H%M%S`.log 2>&1
+wheel1@wheel1-X510UQR:~/Desktop/git.qemu/qemu$ make qemu-nbd
+make: 'qemu-nbd' is up to date.
+wheel1@wheel1-X510UQR:~/Desktop/git.qemu/qemu$ find > ../files-make-img-nbd-noV-`date +%Y%m%d-%H%M%S`.lst
+wheel1@wheel1-X510UQR:~/Desktop/git.qemu/qemu$ 
