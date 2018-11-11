@@ -1,0 +1,3 @@
+./pc-bios/hppa-firmware.img
+./pc-bios/s390-netboot.img
+./pc-bios/s390-ccw.img
